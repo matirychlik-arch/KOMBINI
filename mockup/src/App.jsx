@@ -60,20 +60,18 @@ export default function App() {
   }
 
   return (
-    <div className="no-select">
-      <div className="kiosk">
-        <AnimatePresence mode="wait">
-          {screen === 0 && <IdleScreen key="idle" {...ctx} />}
-          {screen === 1 && <MenuScreen key="menu" {...ctx} />}
-          {screen === 2 && <ProductHeroScreen key="hero" {...ctx} />}
-          {screen === 3 && <CustomizationScreen key="custom" {...ctx} />}
-          {screen === 4 && <CartScreen key="cart" {...ctx} />}
-          {screen === 5 && <PaymentScreen key="payment" {...ctx} />}
-          {screen === 6 && <PreparationScreen key="prep" {...ctx} />}
-          {screen === 8 && <RewardScreen key="reward" {...ctx} />}
-          {screen === 9 && <PickupScreen key="pickup" {...ctx} />}
-        </AnimatePresence>
-      </div>
+    <div className="kiosk no-select">
+      <AnimatePresence mode="wait">
+        {screen === 0 && <IdleScreen key="idle" {...ctx} />}
+        {screen === 1 && <MenuScreen key="menu" {...ctx} />}
+        {screen === 2 && <ProductHeroScreen key="hero" {...ctx} />}
+        {screen === 3 && <CustomizationScreen key="custom" {...ctx} />}
+        {screen === 4 && <CartScreen key="cart" {...ctx} />}
+        {screen === 5 && <PaymentScreen key="payment" {...ctx} />}
+        {screen === 6 && <PreparationScreen key="prep" {...ctx} />}
+        {screen === 8 && <RewardScreen key="reward" {...ctx} />}
+        {screen === 9 && <PickupScreen key="pickup" {...ctx} />}
+      </AnimatePresence>
     </div>
   )
 }
