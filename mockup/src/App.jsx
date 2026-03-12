@@ -12,6 +12,8 @@ import PickupScreen from './screens/PickupScreen'
 
 const DEFAULT_CUSTOMIZATION = {
   sweetness: 'normal',
+  milk: 'oat',
+  ice: 'regular',
   syrup: null,
   extraEspresso: false,
 }
