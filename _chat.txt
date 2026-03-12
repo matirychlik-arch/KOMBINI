@@ -1,0 +1,853 @@
+[13.01.2026, 01:46:08] 波兰Mateusz/Happy Workers: ‎Wiadomości i połączenia są w pełni zaszyfrowane. Tylko osoby w tym czacie mogą je odczytywać, odsłuchiwać i udostępniać.
+[13.01.2026, 01:46:08] Ningbo Workers: ‎Ningbo Workers utworzył(a) tę grupę
+[13.01.2026, 01:46:09] 波兰Mateusz/Happy Workers: ‎Ningbo Workers dodał(a) Cię
+[13.01.2026, 01:46:12] Ningbo Workers: hello
+[13.01.2026, 01:53:04] ~ Sherlin: ‎Ta wiadomość została usunięta.
+[13.01.2026, 02:45:16] ~ Sherlin: Hello, I'm Sherlin from Happy workers
+‎[13.01.2026, 03:45:11] ~ Sherlin: JQ-002-A Coffee Vending Machine1229.pdf • ‎22 strony ‎dokument pominięty
+‎[13.01.2026, 03:45:29] ~ Sherlin: ‎film pominięty
+[13.01.2026, 03:46:18] ~ Sherlin: Here is the basic information of coffee vending machine
+[13.01.2026, 11:39:32] Mateusz: Hi Sherlin, thanks for the brochure 👍
+Before moving forward, I need to clearly confirm a few **technical points in writing**.
+Please reply **YES / NO** with short clarification where needed.
+
+**1) Matcha powder**
+I know this is mainly a coffee machine, not a matcha-dedicated one.
+However, I plan to use **regular matcha powder**.
+
+* Can matcha powder be used in a standard powder canister **without frequent clogging**?
+* Is the powder system suitable for **fine powders like matcha**, or are there limitations / recommendations?
+
+**2) Layered drinks**
+
+* Can the machine dispense ingredients in a **defined sequence** (e.g. milk first, then matcha)?
+* Or are ingredients always mixed automatically?
+
+**3) Recipe control**
+
+* Can water / milk / powder ratios be adjusted **per recipe**?
+* Can these parameters be changed **remotely**?
+
+**4) Software / custom UI (very important)**
+I would like to create a **fully custom UI**, similar in style and structure to the example image I shared (not just color or logo changes).
+
+Please confirm:
+
+* Is the system **Android-based**?
+* Can we replace the default UI with a **fully custom interface** (our own layouts, animations, flow)?
+* Do you provide **SDK or API access** to control recipes, UI screens and machine status from custom software?
+
+**5) EU compliance**
+
+* Does this exact model have **CE certification for EU**?
+* Can EU certificates be provided if we proceed?
+
+Once I have clear answers to the above, I can decide quickly about pricing and next steps.
+Thank you.
+‎[13.01.2026, 11:39:41] Mateusz: ‎obraz pominięty
+[13.01.2026, 12:16:40] ~ Sherlin: Okay, I will answer the questions
+[13.01.2026, 13:16:07] Mateusz: Thank you, Sherlin. I would be much obliged.
+[15.01.2026, 10:40:32] ~ Sherlin: Good morning, sorry for the late reply
+‎[15.01.2026, 10:41:57] ~ Sherlin: ‎film pominięty
+[15.01.2026, 10:42:44] ~ Sherlin: Our machine could make matcha drinks.
+[15.01.2026, 10:44:42] ~ Sherlin: And this protein shake machine better suits your need.
+[15.01.2026, 10:45:15] ~ Sherlin: ‎Ta wiadomość została usunięta.
+‎[15.01.2026, 10:47:08] ~ Sherlin: JQ-002-A02 Protein Shake Vending Machine251110.pdf • ‎24 strony ‎dokument pominięty
+‎[15.01.2026, 10:47:34] ~ Sherlin: ‎film pominięty
+‎[15.01.2026, 10:56:47] ~ Sherlin: Answer to the Questions.pdf • ‎2 strony ‎dokument pominięty
+[15.01.2026, 10:57:16] ~ Sherlin: And here are the answers, please check.
+[15.01.2026, 13:49:36] Mateusz: Hi Sherlin, thanks for the previous answers 👍
+I just want to clarify a few points more precisely, to be 100% sure before moving forward.
+
+1) Full custom UI (very important, clarification)
+I understand that in your system it’s possible to change images, icons and assets (PNG, videos, etc.) inside your existing UI.
+
+What I want to clarify is this:
+
+Is it possible to create a fully custom UI (our own layouts, animations, user flow), not only replacing images inside your standard interface?
+
+In other words: can the UI logic and screens be custom-built, or is customization limited to assets within your existing UI structure?
+
+I mean an entire new app, coded by our designer, and linked with the machine via API / SDK (if available).
+
+Have you ever done something like this before?
+If not, do you think it would be technically possible?
+
+The ideal version of my menu is quite different from the current machine UI (layout changes, colors, typography, shadows, etc.).
+
+I’m asking to understand the real technical scope, not to request extra development right now.
+
+2) Layered drinks – visual result in the cup
+I want to be very specific here to avoid misunderstanding.
+
+You mentioned ingredients can be dispensed in sequence, but also that they mix in the mixer group.
+
+My question is: after dispensing into the cup, will the customer see visible layers in the drink, or will the drink always be fully mixed?
+(assuming a transparent cup)
+
+For example (see image I attached):
+milk at the bottom, matcha layer above — visibly separated in the cup, not mixed.
+
+Is this kind of visual layering in the cup achievable with this machine?
+
+If not, please confirm that drinks will always be visually mixed.
+
+2B) Split cup with two chambers (additional idea)
+I’m also considering using cups with two separate chambers (see image attached).
+
+Please let me know:
+
+Is the machine able to dispense into two different chambers of the same cup?
+
+Can the cup be moved or positioned precisely under different nozzles, so that:
+
+coffee is poured into one chamber
+
+matcha is poured into the other chamber
+
+Or is the cup position fixed, with all liquids always dispensed into the same central position?
+
+This would help me understand whether this could be a viable alternative approach.
+
+3) Matcha powder (practical usage)
+I plan to use regular matcha powder (I understand this is not a dedicated matcha machine).
+From your materials and videos, I understand the machine can mix matcha.
+
+Just to confirm practically:
+
+Is matcha powder commonly used by your clients in this model?
+
+Any recommendations regarding powder fineness or daily maintenance to avoid clogging?
+
+4) Timing – order before Chinese New Year
+I would like to place the first machine order before Chinese New Year, if possible.
+
+Please let me know:
+
+Is there a chance to produce and ship one machine before your CNY holiday?
+
+If yes, what would be the estimated production time and shipping time?
+
+5) Shipping to Poland
+Please also advise:
+
+Estimated shipping cost to Poland, Katowice
+(delivery address: Obroki 130, 40-833 Katowice, Poland)
+
+Shipping method (sea / rail)
+
+Estimated delivery time door-to-door
+
+
+
+
+6) Logistics, price, warranty, spare parts
+Please provide in writing:
+
+EXW unit price for 1 sample unit and price tiers for 5 / 10+ units.
+
+Lead time (production) and estimated delivery time to Katowice, Poland (EXW / FOB / CIF / DDP options).
+
+Warranty period (months) and what warranty covers.
+
+List of consumable & spare parts, part numbers and price list. Are spare parts stocked in EU? YES / NO (if YES, where).
+
+Once I clearly understand the UI possibilities, visual result in the cup, and timing before CNY, I can decide quickly on the first order.
+
+Thanks a lot for your patience and clear answers.
+Mati
+‎[15.01.2026, 15:30:05] Mateusz: ‎obraz pominięty
+‎[15.01.2026, 15:31:17] Mateusz: Layered matcha ‎obraz pominięty
+[19.01.2026, 10:46:50] Mateusz: Hello Sherlin, I don’t want to be pushy, but have you had a chance to check those things for me? I know it’s late before Chinese festivities, but if everything checks out, I'd love to order some machines from you.
+[19.01.2026, 12:23:18] ~ Sherlin: Sorry for the late reply, I will answer very soon
+[19.01.2026, 15:19:09] ~ Sherlin: 1. It depends on the quantity, how many units do you need?
+2. After dispensing into the cup, could see visible layers. 
+The transparent cup cannot be detected by the machine. It is recommended to use paper cup. The cup position fixed, with all liquid  always dispensed into the same cup.
+3. Matcha powder is commonly used. We will help to adjust the recipes
+4. Yes, It's possible to ship before Chinese New Year
+Production days: for 1 unit, 7 days
+shipping days: about 50 days
+5.shipping method: sea
+EXW price:
+5 units: 4280$/unit
+10 units: 4180$/unit
+Lead time: depends on the quantity
+Shipping time: about 50 days(EXW, CIF)
+
+The warranty period is 14 months after we ship out the machine. During the warranty period, we provide free parts and bears the freight (excluding damage caused by human error).
+
+We have spare parts in stock, and the delivery time is about 3-7 days. If you have a lot of machines, we suggest you buy some spare parts in advance so that you can replace them in time and avoid delaying sales. We will also ship the spare parts in a timely manner.
+[19.01.2026, 16:53:50] Mateusz: Hi Sherlin, thanks again for the clear answers 👍
+I’d like to align on one key topic so I can decide on the first order with full clarity.
+
+From my side, the most realistic path is:
+	•	start with 1 machine as a pilot,
+	•	then scale to 10+ machines within this year if the machine, visual result and system fit my business model.
+
+Since you mentioned that UI customization depends on quantity, I’d like to clearly understand what options are realistically available.
+
+Regarding custom UI, could you please advise on these possibilities:
+
+Option A – Custom UI for 1 machine (paid development)
+	•	Is it possible to create a more deeply customized UI (custom layouts, flow, animations — not only image replacement) for a single machine, if the development cost is covered by me?
+	•	If yes, how is this usually handled: fixed development fee, per-machine cost, or project-based quotation?
+
+Option B – Custom UI linked to quantity
+	•	At what quantity does deeper UI customization typically become feasible on your side?
+	•	Would 5 machines be a realistic starting point to discuss a more customized UI?
+
+Option C – Custom UI developed on my side (future)
+	•	Is there any possibility (now or in the future) to provide technical access (API / SDK / integration layer) that would allow my developer to build a custom UI and connect it with the machine system?
+
+I’m not requesting any immediate development — my goal is simply to understand which paths are technically and commercially possible, so I can plan correctly.
+
+If we align on this, I’m comfortable starting with 1 unit now, with a clear roadmap toward 5–10+ units.
+
+Thanks again,
+Mati
+[19.01.2026, 16:58:18] Mateusz: And about the freight
+[19.01.2026, 16:58:23] Mateusz: Thanks for the details.
+I’d like to clarify one important point regarding logistics, not only for the first unit but for all future orders.
+
+For my business model, EXW is not a workable option.
+I’m not set up to manage export, freight and customs from China on my side, especially as I plan to scale.
+
+For every order (1 unit and multi-unit orders), I would need at least:
+	•	CIF to an EU port (e.g. Hamburg or Gdansk),
+and ideally:
+	•	DAP or DDP to Katowice, Poland.
+
+I’m happy to accept different pricing for CIF / DAP / DDP compared to EXW — I just need a solution where logistics and customs are handled by you or your forwarder.
+
+Please let me know which of these options you can support as a standard setup for ongoing cooperation.
+[21.01.2026, 03:27:48] ~ Sherlin: Customized UI need development fee 2000$
+[21.01.2026, 03:27:56] ~ Sherlin: we can do CIF. For 1 unit, CIF Hamburg :141$  / CIF Gdansk: 141$
+[22.01.2026, 13:30:52] Mateusz: Thanks for confirming the 2000 USD custom UI development 👍
+That sounds reasonable.
+
+To make sure we align expectations, I’d just like to better understand what is included in this scope and how flexible the UI can be over time.
+
+For the first version, the UI can stay relatively simple — similar in complexity to common kiosk systems like McDonald’s or Starbucks, which you’ve already seen.
+
+I’d like to understand:
+
+What is included in the 2000 USD custom UI:
+
+custom layout & flow?
+
+animations?
+
+number of design / logic revisions?
+
+How many rounds of changes are usually included before it’s considered a new task?
+
+Looking a bit ahead (not for now, just to understand possibilities):
+
+If in the future I want to update visuals (images, videos, texts) for seasonal campaigns, is this something that can be done easily?
+
+At what point does an update become new development, rather than simple UI/content change?
+
+I’m asking this only to understand how your UI solution works long-term, not to request extra features right now.
+
+Thanks for helping clarify this,
+Mati
+[22.01.2026, 15:17:10] ~ Sherlin: I will give you the detailed feedback soon.
+[22.01.2026, 15:40:46] Mateusz: Thanks, no problem 👍
+Take your time.
+Just let me know once you have the detailed feedback — I’m happy to review it and align on next steps.
+[22.01.2026, 16:05:12] ~ Sherlin: okay
+[26.01.2026, 10:25:06] Mateusz: Hi Sherlin 🙂
+Just checking in — did you have a chance to get some internal feedback?
+I just wanted to see if we could align on this before your holiday.
+[26.01.2026, 10:29:29] Mateusz: By the way, one separate question 🙂
+Do you also manufacture or supply vending machines for perfumes / fragrance sampling?
+A company I work closely with is currently looking for this type of machine, so I wanted to ask.
+[27.01.2026, 02:20:39] ~ Sherlin: Hello
+[27.01.2026, 02:28:48] ~ Sherlin: We could customize the UI according to your requirement.
+[27.01.2026, 02:33:08] ~ Sherlin: Custom layout & flow, animations, number of design / logic revisions are included.
+[27.01.2026, 03:05:00] ~ Sherlin: The UI displayed on the picture are included in the task.
+[27.01.2026, 03:57:55] ~ Sherlin: If in the future want to update visuals (images, videos, texts) for seasonal campaigns, it is okay.
+[29.01.2026, 12:54:47] Mateusz: Thanks, that’s great to hear 👍
+This aligns very well with what I had in mind.
+
+Just to make sure everything is clear before moving forward — hopefully this is the **last clarification before placing the first order**.
+
+**1) UI updates over time (final clarification)**
+For future seasonal updates (images, videos, texts):
+
+* would these updates be something I can change myself, or
+* would they be handled by your team as part of normal UI updates?
+
+And regarding small **logic changes inside the UI** (menu behavior, simple interactions):
+
+* are these treated as updates, or as new development?
+
+**2) Order & software timeline**
+From a timing perspective, I’d like to understand the best workflow:
+
+* Is it possible to **place the machine order now** and work on the **custom UI/software in parallel** while the machine is being produced and shipped?
+* Or does the UI need to be **fully completed before shipment**?
+
+**3) Next steps to place the order**
+I’m ready to proceed and would like to place the **first order this week**.
+
+Please let me know:
+
+* what information you need from me to start (UI materials, logo, menu structure, etc.),
+* what the next steps are on your side (proforma invoice, payment, timeline),
+* and which shipping option we should proceed with (**CIF EU port / DAP Katowice**).
+
+Once I have this, I can move forward immediately.
+
+Thanks again,
+Mati
+[29.01.2026, 13:42:11] ~ Sherlin: I will give the feed back tomorrow after confirming the details
+[29.01.2026, 13:43:25] Mateusz: Sure, and if everything looks good, I would like to place an order
+[29.01.2026, 13:43:34] Mateusz: Thanks again Sherlin 😊
+[29.01.2026, 13:45:34] ~ Sherlin: ☕That's great
+‎[30.01.2026, 09:06:43] ~ Sherlin: Answer to the questions.pdf • ‎1 strona ‎dokument pominięty
+‎[30.01.2026, 10:27:46] ~ Sherlin: ‎obraz pominięty
+[30.01.2026, 10:40:34] ~ Sherlin: About this part, it means that the topping can be added only 1 portion or more than 1 portion?
+[30.01.2026, 10:46:58] Mateusz: This was only a preview, I need to rethink that. But I'm not sure yet if I want user to be able to add more matcha, probably matcha would be set and only other ingredients would be customizable. But each recipe should be editable and show what it contains. So if the user chooses iced strawberry matcha latte after clicking customize order them should see that it contains - matcha, oat milk, strawberry pulp, sweetener and ice
+[30.01.2026, 10:48:08] Mateusz: The fact that in this picture next to matcha there is no plus sign but green tick is just the visualization
+[30.01.2026, 11:04:53] ~ Sherlin: Okay,got it
+[30.01.2026, 11:36:36] Mateusz: To make sure we are fully aligned and everything is clear under Alibaba platform rules, could you please summarize our agreement in this chat?
+
+It would be great if you could include:
+- machine quantity and model,
+- UI & software scope,
+- logistics / shipping terms,
+- pricing breakdown,
+- production & shipping timeline.
+
+Once you share your summary, I will review it and confirm so we can proceed with the order and payment.
+
+Thank you,  
+Mati
+[30.01.2026, 13:30:33] ~ Sherlin: The customization is mainly about UI rather than the software, right?
+[30.01.2026, 13:32:00] ~ Sherlin: And which port will the machine ship to
+[30.01.2026, 13:32:39] Mateusz: And is it possible to deliver by train? I know sometimes it is an option?
+[30.01.2026, 13:37:00] ~ Sherlin: Sea freight is suggested, for train not able to ship coffee vending machine.
+[30.01.2026, 13:49:57] Mateusz: Okay, I understand. So the delivery port for sea freight would be Gdansk
+[30.01.2026, 14:03:58] ~ Sherlin: okay, I will check the freight fee
+[30.01.2026, 14:04:10] Mateusz: I mean, UI/UX is a part of a software right? So it is kinda customization of the software 🙂
+[30.01.2026, 14:10:57] ~ Sherlin: Yes, we can customize customize the UI  on the screen of machine according to your need. And the platform can use ours, you can change materials online.
+[30.01.2026, 14:12:41] Mateusz: Oh, yes, the online menaging part could stay as it is, no need for customization the online platform in which I can menage materials online.
+[30.01.2026, 14:28:57] ~ Sherlin: For this order, how many units do you need
+[30.01.2026, 14:29:15] ~ Sherlin: And what payment method do you need on the machine
+[30.01.2026, 14:29:39] ~ Sherlin: I will give all the details very soon
+[30.01.2026, 14:43:50] Mateusz: I think I will start with 2 units, I want to pay through alibaba and I need invoice for my company but if possible with date near to shipment delivery date.
+[30.01.2026, 14:46:56] ~ Sherlin: We have USD account,  could pay by bank transfer.
+[30.01.2026, 14:55:39] Mateusz: Thanks for the information.
+
+For this order, I’d like to proceed **through Alibaba**.
+It’s important for me to keep the payment, contract terms and delivery fully within the Alibaba system.
+
+This is my standard process for equipment + software orders, especially at the beginning of cooperation.
+
+Once we align everything in the Alibaba chat and order page, I’m ready to proceed with payment there.
+
+Thank you for understanding,
+Mati
+[30.01.2026, 15:11:06] ~ Sherlin: - machine quantity and model: protein shake vending machine
+- UI & software scope: customize the whole UI according to your need, including all the custom layouts, flow, animations 
+- logistics / shipping terms: CIF Gdansk:3780$/unit
+- pricing breakdown:
+For 2 units, protein shake vending machine:3680$/unit, freight fee 100$/unit
+- production & shipping timeline.
+- production: 7 days, delivery time:50 days
+[30.01.2026, 15:11:07] ~ Sherlin: We could appoint a video call to better know the machine and our factory
+[30.01.2026, 15:14:34] ~ Sherlin: We are the factory which concentrate on making vending machines for 14 years
+[30.01.2026, 15:41:14] Mateusz: Hey Sherlin, I was thinking about a coffee vending machine, since I want to be able to make both coffee and matcha with one machine.
+[30.01.2026, 15:42:13] Mateusz: I'm also interested in only protein powder one but for starters I would like to try with more options
+[30.01.2026, 15:42:41] Mateusz: I've got a plan for offspring of my bra and for gyms and put there machine only with powders
+[30.01.2026, 16:00:01] ~ Sherlin: Hi Mati, you could try the coffee vending machine with the  original system. The machine can make many types of coffees. It could combine with matcha. The coffee vending machine can make 89 types of drinks.
+‎[30.01.2026, 16:02:25] ~ Sherlin: ‎obraz pominięty
+‎[30.01.2026, 16:02:29] ~ Sherlin: ‎obraz pominięty
+[30.01.2026, 16:04:48] Mateusz: I know and it is great that it could prepare many recipes, I've got a lot of recipes I want to try - I assume that I could add/delete my custom recipes to it? I don't exactly understand what you mean by “original system”.
+[30.01.2026, 16:05:42] ~ Sherlin: Yes, you could create your own recipes.
+[30.01.2026, 16:06:36] ~ Sherlin: The original system means that you could use the UI of the coffee vending machine directly.
+[30.01.2026, 16:07:06] ~ Sherlin: In this way, you will have many options besides matcha
+[30.01.2026, 16:09:37] Mateusz: Oh no, I need my custom system, it, a about ui design aligned with my brand and familiarity for customers from Poland that uses other kinds of kiosks in places like Starbucks or McDonald etc. I will send you how my it should look, it will contain both matcha and coffee options ‎<Ta wiadomość była edytowana>
+[30.01.2026, 16:16:37] ~ Sherlin: The coffee need to freshly ground or instant powder
+[30.01.2026, 16:17:36] Mateusz: I will use freshly ground
+[30.01.2026, 16:20:53] Mateusz: Could you update information about coffee grounding machine?
+[30.01.2026, 16:31:27] Mateusz: It will be similar in layout to the one I showed you earlier, but with different branding, colors, and space for matcha and coffee drinks.
+[30.01.2026, 16:36:20] ~ Sherlin: I will update this tomorrow, because the coffee vending machine and protein shake vending machine’s UI logic is totally different. I need to check whether it's feasible.
+[30.01.2026, 16:41:03] Mateusz: Sure, thank you
+[1.02.2026, 04:37:27] ~ Sherlin: - machine quantity and model: coffee vending machine
+- UI & software scope: customize the whole UI according to your need, including all the custom layouts, flow, animations 
+- logistics / shipping terms: CIF Gdansk:4380$/unit
+- pricing breakdown:
+For 2 units, coffee vending machine:4280$/unit, freight fee 100$/unit
+Development fee:2000$
+- production & shipping timeline.
+- production: 10 days, delivery time:50 days
+[1.02.2026, 04:59:30] ~ Sherlin: It involves many factors of the new UI that need take into consideration.
+1.When customers customize their drinks, there is possibility of the topping combination with drink is not in that suit his taste, it will affect the customer’s view about the machine so it also need to take this into consideration in advance.
+2. The current UI actually takes two steps to finish the ordering.  People choose the drink and finish the payment. Ordering a drink is fast.The new UI need to take four steps: People choose drink, customize, finish customization and do the payment. It takes more time.And the customer also need to learn the ordering process, which place to customize, which place to finish customization, it may need be trained.
+[1.02.2026, 05:00:27] ~ Sherlin: Could you please send more details about the UI design about the matcha and coffee.
+[2.02.2026, 02:59:06] ~ Sherlin: ‎~ Sherlin zmienił(a) nazwę grupy na „波兰Mateusz/Happy Workers”
+[2.02.2026, 14:24:43] ~ Sherlin: Hello, good afternoon
+[2.02.2026, 15:11:32] ~ Sherlin: Could we start this project now☕
+[2.02.2026, 15:15:19] Mateusz: I will reply today/tomorrow with details. As soon as possible.
+[2.02.2026, 15:15:39] ~ Sherlin: Okay☕
+[2.02.2026, 15:15:52] Mateusz: Family emergency
+[2.02.2026, 15:16:14] Mateusz: So I had to focus on other things, I will be back asap
+[2.02.2026, 15:31:11] ~ Sherlin: Understood, we could talk later
+[3.02.2026, 13:57:36] Mateusz: Sorry for long wait, I’ve written down everything in 2 documents. You are mostly right here, but people in Poland are accustomed to having options and being able to customize if there is a need, but it is an optional. What I got here is based on logic of 99% of ordering kiosks in Poland and EU (McDonalds, KFC, Pizza Hut etc) so it is natural for people.
+‎[3.02.2026, 13:57:40] Mateusz: User Flow Matcha Machine.pdf • ‎13 stron ‎dokument pominięty
+‎[3.02.2026, 13:57:45] Mateusz: Matcha Machine menu and logic of drinks .pdf • ‎5 stron ‎dokument pominięty
+[3.02.2026, 14:04:53] Mateusz: I've included some images with the documents, but they're not final. They're just a rough guide, just like in previous versions I've sent you.
+[3.02.2026, 17:12:46] ~ Sherlin: We will study this with our R&D team and get back to you soon.
+[3.02.2026, 17:16:38] Mateusz: Thank you!
+[4.02.2026, 09:59:39] ~ Sherlin: Hi, how many materials do you need?
+[4.02.2026, 10:00:28] ~ Sherlin: The coffee vending machine has 6 canisters for powder, 2 canisters for coffee beans and 3 kinds of syrup.
+[4.02.2026, 10:59:14] Mateusz: The number of materials will of course depend on the **available positions in the machine**.
+My flavor concepts and specific drinks will be based on different ingredients that may **change seasonally**, but they will always stay within the machine’s capacity.
+
+At this stage, my **initial setup** would look like this:
+
+**Powder canisters (6):**
+
+1. Matcha powder
+2. Milk powder (main)
+3. Secondary milk powder (e.g. oat or backup)
+4. Flavor powder – Taro
+5. Tonic powder
+6. Reserved / flexible (seasonal powder or future flavor)
+
+**Coffee beans (2):**
+
+1. Espresso beans (main)
+2. Backup / second bean option (same coffee or alternative)
+
+**Syrup pumps (3):**
+
+1. Vanilla
+2. Caramel
+3. Strawberry
+   (these syrups are **rotational**, depending on season and availability)
+
+This setup should fully cover the planned matcha and coffee drinks, including iced and layered variants.
+
+Please let me know if this configuration works well with your machine logic, or if you would recommend any adjustments.
+[4.02.2026, 10:59:34] Mateusz: more available materials is better of course 😀
+[4.02.2026, 12:38:01] Ningbo Workers: and sugar?
+[4.02.2026, 12:39:04] Mateusz: good call, hmm, usually powder carnister is being used for sugar?
+[4.02.2026, 12:39:28] Ningbo Workers: yes
+[4.02.2026, 12:39:39] Ningbo Workers: one of the powder canister to put one sugar
+[4.02.2026, 12:40:38] Mateusz: okay, so i have to use one of the powder carnisters for that
+[4.02.2026, 12:40:58] Mateusz: there is no chance for adding one more carnister to the machine right?
+[4.02.2026, 12:41:37] Ningbo Workers: it is already the maximum
+[4.02.2026, 12:43:34] Mateusz: so I will use one of the existing powder carnisters for sugar/sweetener
+[4.02.2026, 12:44:19] Mateusz: maybe I will use tonic syrup instead of powder and get one more powder slot for something else
+[4.02.2026, 12:46:27] Mateusz: Just to confirm my understanding:
+
+I understand that the **menu defined now is mainly for the initial setup**, and that later I will be able to **add new drink items and modify existing ones** (names, recipes, availability) in the management system as needed.
+
+So today’s menu is not a permanent limitation, but a starting point — please let me know if this understanding is correct.
+[4.02.2026, 16:21:59] ~ Sherlin: yes, you could change recipes according to your need
+[4.02.2026, 16:36:25] Mateusz: Great!
+[5.02.2026, 08:17:52] ~ Sherlin: We could take a trial with the current UI system firstly, the new development takes much time and cost.
+[5.02.2026, 09:42:31] Mateusz: I understand your point, and I agree that new development takes time and cost.
+
+Just to clarify my perspective:  
+I’m completely fine with working on the custom UI/software in the background while the machines are being produced and shipped — even if this takes several weeks.
+
+However, when I officially launch the business and put the machines live, I need them to run with the final custom UI, not a temporary or factory-default interface.  
+The software and UI are a core part of the brand, not just a technical detail.
+
+So from my side, the ideal workflow would be:
+- machines are produced and shipped,
+- UI/software development runs in parallel,
+- the machines go live only once the custom UI is ready.
+
+I’m not trying to rush development — I just want to make sure we are aligned that the first public version will already reflect the final brand experience.
+
+Please let me know if this approach works well on your side.
+[9.02.2026, 10:25:30] Mateusz: Hello Sherlin, how are things going?
+[9.02.2026, 10:25:43] ~ Sherlin: Hello
+[9.02.2026, 11:17:49] ~ Sherlin: Hi, is that okay to pay by bank transfer
+[9.02.2026, 11:29:58] Mateusz: Thanks for checking.
+
+Since this is our **first cooperation**, I’d like the **first order to be placed via Alibaba Trade Assurance**.
+This way both sides are protected, and we can build mutual trust for long-term cooperation.
+
+Once the first order is completed successfully, I’m very open to discussing other payment options for future orders.
+
+Before we move to payment, I just need to **close one important point**, so we are fully aligned:
+
+From a **technical perspective**, can your system realistically support a **fully custom UI** (custom layout, flow, animations) as we discussed — even if it requires more time and cost?
+
+This is a **core requirement** for my project, so I need to be sure about this **before placing the order and payment**.
+
+Also, just to be transparent:
+the faster we complete the **first order and delivery**, the sooner I plan to **place additional orders for more machines**.
+
+Once this point is clearly confirmed, I’m ready to proceed further
+[9.02.2026, 12:24:38] ~ Sherlin: Our Alibaba account is only for advertising and promotion. According to company rules we require payment through official bank transfer.
+[9.02.2026, 12:28:43] ~ Sherlin: We could do the most of the UI you showed us, but it's a brand new interface for us, so development fee is different. And some of the details may need to change.If we really decided to do this in detail, we could negotiate which part is not that feasible and how to improve that.
+[9.02.2026, 12:32:40] Mateusz: Thank you for the honest explanation — I appreciate the transparency.
+
+I’d like to align clearly, because for me this is a **strategic, long-term project**, not a simple standard machine purchase.
+
+I understand that:
+
+* Alibaba Trade Assurance is not available on your side,
+* the UI I shared would be a **new type of interface** for your team,
+* development would take more time and have a different cost.
+
+That’s okay — **I’m open to paying more and giving enough time**, as long as we structure this safely and clearly for both sides.
+
+What is very important for me is:
+
+* clear **technical feasibility** confirmation,
+* a **defined scope** of what can and cannot be delivered,
+* and a **step-by-step development plan** (milestones), especially since payment would be via bank transfer.
+
+Before I can proceed with any payment, I need to understand:
+
+1. Which parts of the UI you are **confident you can deliver**,
+2. Which parts you think are **not feasible or need to change**,
+3. How you suggest structuring the UI development in **phases** (so both sides reduce risk).
+
+If we can align on this clearly, and the result matches the brand level I’m aiming for, I’m very serious about **scaling orders after the first successful delivery**.
+
+I prefer to be fully aligned now, rather than discover limitations after payment.
+
+Looking forward to your thoughts,
+Mati
+[9.02.2026, 13:24:20] ~ Sherlin: Okay,  I will give the detailed feedback about the feasibility tomorrow after the confirmation with R&D team.
+[11.02.2026, 10:48:52] ~ Sherlin: Hello, we could talk more details of the UI. For the machine and development, both do 50% deposite and 50% balance.
+[11.02.2026, 10:48:59] ~ Sherlin: For the development fee, we could do 50% deposite and after development, 50% balance be paid.
+‎[11.02.2026, 10:52:10] ~ Sherlin: ‎obraz pominięty
+[11.02.2026, 10:54:51] ~ Sherlin: 1. For the first screen, is it in the form  of GIF, MP4 or JPG?
+‎[11.02.2026, 11:00:29] ~ Sherlin: ‎obraz pominięty
+[11.02.2026, 11:20:01] Mateusz: I want to it to change according to ongoing promo deals or new products, I could prepare it in any format, but mp4 and jpg/png would be great
+[11.02.2026, 13:20:08] ~ Sherlin: Do you have prefer in mp4 and jpg
+[11.02.2026, 13:21:01] Mateusz: Yes mp4 and png would be best for quality, but jpg is also fine
+[11.02.2026, 13:24:42] ~ Sherlin: 2. The second page is for the difference columns of the drinks
+[11.02.2026, 13:26:15] ~ Sherlin: one: coffee 
+two:matcha
+three:Picture is blur.
+[11.02.2026, 13:26:44] ~ Sherlin: Have you decided the types of drinks will be these three types of drinks?
+[11.02.2026, 13:30:59] Mateusz: I think categorie three would be special drinks - that I want to promote at the moment ‎<Ta wiadomość była edytowana>
+[11.02.2026, 13:32:12] Mateusz: I will prepare accurate ui designs for each screen as soon we will confirm that doing something like this is achievable
+[11.02.2026, 13:33:22] ~ Sherlin: Ok, so so the column will be three types of drink. If so, we will design according to 3 types of drinks
+[11.02.2026, 13:34:59] Mateusz: But special would be the same as in both other categories but just displayed on the main screen. so actually there is matcha and coffee category, however I want to create also drinks like dirty matcha that contains matcha + shot of espresso
+[11.02.2026, 13:36:38] ~ Sherlin: can we have voice call
+[11.02.2026, 13:37:02] ~ Sherlin: it will help better understand
+[11.02.2026, 13:37:34] Mateusz: Yes, sure we can
+[11.02.2026, 14:05:18] Mateusz: here
+[11.02.2026, 14:16:18] Mateusz: here
+[11.02.2026, 14:33:59] Mateusz: I've lost you Sherlin, after my question about discounts codes or promotions
+[11.02.2026, 14:43:06] ~ Sherlin: This is the process of order a drink， That's UI of our machine
+[17.02.2026, 09:49:43] ~ Sherlin: Hello
+[17.02.2026, 09:51:52] Mateusz: Hello Sherlin, have we got any feedback from the development team?
+[17.02.2026, 10:44:37] ~ Sherlin: Yes, but still need to talk some details
+‎[17.02.2026, 10:50:29] ~ Sherlin: ‎obraz pominięty
+[17.02.2026, 10:53:06] Mateusz: Sure, what are the concerns?
+[17.02.2026, 11:01:38] ~ Sherlin: 1.The machine has pickup code, by inputing the digital password, it could open the door. 
+2.“Welcome”
+3.“Change” 
+All these three buttons or words need to check the location and put into design.
+[17.02.2026, 11:01:38] ~ Sherlin: For the payment method, you only need card reader, right?
+‎[17.02.2026, 11:01:41] ~ Sherlin: ‎obraz pominięty
+[17.02.2026, 11:33:12] Mateusz: Hi Sherlin,
+
+Thanks for clarifying.
+
+Regarding:
+
+Pickup code – that’s fine.
+We can integrate the pickup code into the user flow design. It doesn’t need to be removed, only visually aligned with the brand UI, we could put it on the last screen with thank you. Maybe we could add line „Please pick up your order with the code”
+
+“Welcome” and “Change” – understood.
+Please confirm whether these are system-required elements that cannot be removed, but can be restyled and repositioned. What those button would do? What is their purpose?
+
+Payment method – yes, only card reader is needed (no cash, no QR code).
+[17.02.2026, 13:04:08] ~ Sherlin: The “pickup code” is just the password that could input and open the door of the machine, so it is convinent to refill the raw materials and do the cleaning, it's better to put in the first or sencond page.
+[17.02.2026, 13:10:39] Mateusz: Aaa, okay, so it is a maintenance thing, sure we will find a place for it somewhere in the first page
+[18.02.2026, 16:33:55] Mateusz: Hi Sherlin,
+
+I just want to align clearly so we can move forward.
+
+From your side, are we technically aligned now regarding:
+	•	machine configuration,
+	•	custom UI scope,
+	•	development structure (50/50),
+	•	and payment terms?
+
+If everything is clear, I’m ready to proceed with the first machine order.
+
+Also, since the New Year holiday period is ongoing (right?), could you please confirm that production and development are now operating normally and timelines are not affected?
+
+If there are any open technical points that still need clarification before we start, please let me know directly so we can close them quickly.
+
+Thanks,
+Mati ‎<Ta wiadomość była edytowana>
+[18.02.2026, 16:43:10] ~ Sherlin: Hi Mati, 
+We could proceed this order smoothly because  after several days, the holiday will finish, the production and development could start  soon.
+[18.02.2026, 17:07:07] ~ Sherlin: And I also want to confirm more details, beacuse we have to integrate your UI with the current system.
+[18.02.2026, 17:09:27] ~ Sherlin: 1. Will you still keep the first screen? the format will be png.
+‎[18.02.2026, 17:10:03] ~ Sherlin: ‎obraz pominięty
+[18.02.2026, 17:12:31] ~ Sherlin: Or directly make the columns of drink as the first page.
+[18.02.2026, 17:18:49] Mateusz: I want the first screen, but I need to be able to play videos on it, because it will be the first thing customers will see when passing by. I want to play ads on this screen for new flavours and products, and also advertise my collabs with other brands.
+[18.02.2026, 17:52:35] ~ Sherlin: Png or gif is supported.
+[18.02.2026, 18:00:42] Mateusz: There is no possibility for a video? on your machine there is a box with video on the first screen
+[19.02.2026, 04:26:24] ~ Sherlin: Because in our system, the video is play all the time during the whole ordering process.
+[19.02.2026, 07:06:38] Mateusz: But can I have multiple png showing one after another? So in a form of a playlist?
+[19.02.2026, 07:34:19] ~ Sherlin: It's okay
+[19.02.2026, 08:38:57] Mateusz: Oh, great
+[19.02.2026, 09:00:13] ~ Sherlin: And for the second page, it should find position for these buttons.
+[19.02.2026, 09:01:44] Mateusz: Could I work on final layout for you to work on? Could you list for me all details I should take into consideration while designing it (as must have buttons etc.)?
+[19.02.2026, 09:02:30] ~ Sherlin: Yes
+[19.02.2026, 09:18:29] ~ Sherlin: For the second page, need to place these:
+1. “Welcome” 
+2. “Pick up code” button and “submit” button
+3. QR code and machine code
+4. “Cart settle” button, “balance” button and “change” button
+‎[19.02.2026, 09:19:04] ~ Sherlin: ‎obraz pominięty
+[19.02.2026, 09:35:00] Mateusz: And qr code is for which functionality?
+[19.02.2026, 09:36:09] Mateusz: If You could please explain what each button does in your system
+[19.02.2026, 09:41:38] ~ Sherlin: 1.“Wecome” is the setting for the customer to start order.
+2. “Pick up code” button and “submit” button is to input the password and open the machine to refill and cleaning of machine.
+3. QR code and machine code. Each machine has a only qr code and machine code, by scanning this code, could open the machine door.
+4. “Cart settle” button, “balance” button and “change” button is designed for 
+shop cart and payment method.
+[19.02.2026, 10:04:51] Mateusz: 1. so „welcome” is my „tap to start” on the first screen
+2 &3. "Pick up code” is the same as „QR code” just for maintenance - it should be unintrusive, just to be seen by the operator, right?
+4. ⁠those are button that would be part of my flow. 
+"Cart settle” is „”checkout”? 
+„balance” is I don’t know the possible function of it? Is it for prepaid stuff or something?
+"change” button is for „customize drink” or for cuztomize cart/bag in every moment during ordering process?
+
+Where those buttons should be in my flow? I’m not sure 🙂
+[19.02.2026, 10:05:49] Mateusz: Sorry Sherlin, but I need more exlplanation on that
+[19.02.2026, 15:31:13] ~ Sherlin: 1. Welcome is on the second page, in the middle of products, this is in case you need switch to rotating interface.
+2&3.  yes
+4. cart settle yes, it's for the check out of the drink in the shopping cart.
+balance refers to remaining amount
+change refers to give change
+These button are necessary.
+[20.02.2026, 10:58:57] Mateusz: I would like to clarify two points regarding the interface.
+
+1) “Welcome” / rotating interface
+
+You mentioned that “Welcome” is used to switch to rotating interface.
+
+For my project, I prefer a fixed layout and I do not need the customer to switch interface mode.
+
+Please confirm:
+	•	Is the rotating interface optional and can it be disabled in system settings?
+	•	If rotating interface is disabled, is the “Welcome” button still required?
+	•	Can we replace this function visually with our own first screen that says:
+“Dotknij, żeby zamówić” (Tap to order – Polish)?
+	•	Language switching must remain available (Polish as default + English), but ideally as a small icon in the corner.
+
+I want to understand what is required by system logic and what can be simplified in the customer view.
+
+⸻
+
+2) “Balance” and “Change”
+
+In my configuration there will be:
+	•	card reader only
+	•	no cash payment
+	•	no coins
+	•	no prepaid wallet
+
+So customers will never insert money into the machine and there will be no physical change.
+
+In this case:
+	•	What would “balance” display?
+	•	What would “change” do?
+	•	If cash module is not installed, can these functions be disabled or hidden from the customer interface?
+
+I want to keep all required system logic, but avoid displaying elements that are not used in my payment configuration.
+
+Please confirm what is technically possible.
+[22.02.2026, 03:46:31] ~ Sherlin: Hello, Mati
+The “wecome” is also position to show the status of machine like“short of water” “machine is rebooting”, so it's necessary.
+
+It's ok to put a tap to order button on the first screen.
+
+Our machine could support two languages at the same time. What do you mean by switch the languages?
+
+Balance and change is also required in the design. Balance is the balance of VIP card and cash. And the change shows denominations for change.
+
+If cash module is not installed, this function can be disabled by not uploading the picture.
+
+From the second page, each page need to place a back button, go back to the previous page.
+[22.02.2026, 04:09:58] ~ Sherlin: And the second, third, fourth, fifth page all need to place button for cart settle, balance, change and back button.
+‎[22.02.2026, 06:27:13] ~ Sherlin: ‎obraz pominięty
+[22.02.2026, 09:21:04] ~ Sherlin: And need to place “please select payment method”in the 5th or 6th page.
+[22.02.2026, 09:59:34] Mateusz: Thank you for your explanations.
+i would like to clearly align on a few technical points so we avoid misunderstandings later.
+
+⸻
+
+1️⃣ Welcome element
+
+I understand that “Welcome” is required to display machine status (for example: short of water, rebooting, etc.).
+
+Please clarify:
+	•	Is “Welcome” intended for customer interaction?
+	•	Or is it mainly for operator / maintenance access?
+
+If it is primarily for operator functions,
+can it be placed inside a hidden technical menu instead of being visible on the customer interface?
+
+If it must remain visible to display system status,
+can it function only as a status display area (not as a large customer-facing button)?
+
+We want to keep all required system functions, but minimize technical elements visible to customers.
+
+⸻
+
+2️⃣ Language switching (PL / EN)
+
+We want only ONE language visible at a time.
+
+Default language: Polish.
+Customer should have the option to switch to English.
+
+Please confirm:
+	•	Can we implement a small on-screen language toggle (PL / EN)?
+	•	When switching, does the entire interface change language?
+	•	Is language switching available for customers, or only in system settings?
+
+We do not want both languages displayed simultaneously.
+
+⸻
+
+3️⃣ VIP card system – clarification
+
+You mentioned VIP card and balance.
+
+Could you please explain:
+	•	Is VIP card a prepaid balance system?
+	•	Is it a loyalty / membership card?
+	•	Or is it connected to a specific Chinese payment system?
+
+In Poland, we mainly need:
+	•	NFC card terminal (Visa / Mastercard)
+	•	no cash module
+
+However, in the future we would like:
+	•	loyalty programs
+	•	promotions
+	•	discount codes
+	•	possibly customer accounts
+
+Does your system support any of these features?
+Or would that require additional development?
+
+⸻
+
+4️⃣ Balance / Change
+
+If we install:
+	•	no cash module
+	•	no VIP prepaid balance
+
+Please confirm clearly:
+	•	Can “balance” and “change” be completely hidden from the customer interface?
+	•	Or are they still required to be visible?
+
+⸻
+
+5️⃣ Required system buttons (cart settle / back etc.)
+
+We understand that certain system buttons are required by logic.
+
+That is acceptable.
+
+Please confirm:
+
+Can ALL required system elements be fully redesigned visually by us
+(colors, typography, shapes, icons, layout),
+as long as the logic remains unchanged?
+
+For example, we may design a custom bottom bar and place required system buttons inside that layout.
+
+We are not trying to remove system logic —
+we just need full visual consistency with our brand.
+
+⸻
+
+Once we confirm these technical boundaries clearly,
+we are ready to proceed with deposit and start development.
+
+i just want full clarity before moving forward.
+[23.02.2026, 12:44:34] ~ Sherlin: I will give the feedback soon.
+[24.02.2026, 11:57:27] ~ Sherlin: ‎Ta wiadomość została usunięta.
+[24.02.2026, 11:57:51] ~ Sherlin: 1️⃣ Welcome element
+ “Welcome” is mainly for operator / maintenance access.
+It must remain visible to display system status, it could function only as a status display area rather not as a large customer-facing button. You could set the location of it to a place that is not very obvious.
+
+2️⃣ Language switching (PL / EN)
+Language switching can only do in system settings.
+We could do both languages displayed simultaneously, if switch language, it may affect the speed of customer ordering.
+
+3️⃣ VIP card system – clarification
+Could you please explain:
+	•	Is VIP card a prepaid balance system?
+    yes
+	•	Is it a loyalty / membership card?
+    yes
+	•	Or is it connected to a specific Chinese payment system?
+No, it vip card is pre charge function. if mobile has nfc function, it can be recharge too. It could charge on our platform. Customer can use this card to buy drinks, and you can get cash flow first , it also can make promOtion , for example, if they charge 100. you can give 110
+Could you specify the details of the development of these functions?
+	•	loyalty programs
+	•	promotions
+	•	discount codes
+	•	possibly customer accounts
+4️⃣ Balance / Change
+
+ “Balance” and “change” can be completely hidden from the customer interface.
+
+5️⃣ Required system buttons (cart settle / back etc.)
+Colors, icons can be changed. Shapes and layout can be changed but cannot be changed once the development starts.
+The default typography cannot be changed.
+[25.02.2026, 11:42:20] ~ Sherlin: Hi Mati, you could make a first version design of the UI
+[25.02.2026, 16:02:31] Mateusz: Yes, I will work on it in the coming few days
+[25.02.2026, 16:02:47] Mateusz: And I will get back to you asap
+[26.02.2026, 04:23:16] ~ Sherlin: Okay, and I could make the PI for you, the development fee is 4000$.
+[26.02.2026, 07:53:35] Mateusz: Before we move forward with PI and payment, I would like to finalize one important step.
+
+I will prepare the complete final UI layout (including positioning of required system buttons, language structure, cart flow, etc.).
+
+Once I send you the final layout, I need your confirmation in writing that:
+	•	The design is technically feasible within your system.
+	•	All required system elements can be integrated into this layout.
+	•	There are no structural limitations that would require major redesign after development starts.
+
+Only after we both confirm that the approved layout is fully possible, we can proceed with:
+	•	Machine order
+	•	Development fee payment
+
+I believe this will protect both sides and ensure smooth cooperation.
+[26.02.2026, 08:23:53] ~ Sherlin: Okay, wait your design
+[2.03.2026, 09:14:44] ~ Sherlin: Good morning
+[2.03.2026, 09:15:04] Mateusz: Good morning Sherlin
+[2.03.2026, 09:16:51] ~ Sherlin: Hi, how's the progress of the first version of UI design ☕
+[2.03.2026, 09:20:00] Mateusz: Sorry, I’ve got a delay, some family problems, my grandpa went to the hospital and few other things
+[2.03.2026, 09:20:07] Mateusz: But I'm working on it
+[2.03.2026, 09:25:07] ~ Sherlin: I‘m sorry to hear that.
+[2.03.2026, 09:25:37] ~ Sherlin: Hope she could get better soon.
+[2.03.2026, 09:26:44] ~ Sherlin: We can proceed with the development later when the design is finished.
+[9.03.2026, 09:04:00] ~ Sherlin: Good morning
+‎[9.03.2026, 09:07:06] ~ Sherlin: ‎obraz pominięty
+[9.03.2026, 09:08:01] ~ Sherlin: Is everything going on well with the design of of the UI?
+[9.03.2026, 09:24:52] Mateusz: Hello Sherlin
+[9.03.2026, 09:26:35] Mateusz: Iw wouldn't say is going very well, but it's definitely going  forward, still working on Ui designs though. Sorry for that, but it's just life of a guy who have to work to get money, take care of others and work on his dream project of cool vending business.
+[9.03.2026, 09:27:26] Mateusz: But I’m still working on it and hope I could finish the UI soon
+‎[9.03.2026, 09:33:08] Mateusz: I’ve managed to create visualisation of how I would like it to look like, there would be also some huge stickers with brand heroes put on the mirror cover ‎obraz pominięty
+[9.03.2026, 09:34:53] ~ Sherlin: I fully understand your situation and look forward to seeing the beautiful UI design.
+[9.03.2026, 10:18:12] ~ Sherlin: I need to check whether mirror film could be pasted on the machine, here are the example of our ordinary sticker.  I will reply in half an hour.
+[9.03.2026, 10:31:00] ~ Sherlin: We could do the mirror film sticker, which is 100$/unit
+[9.03.2026, 10:32:12] Mateusz: Ok, great, could you show me how your mirror film stocker looks like?
+[9.03.2026, 12:07:06] ~ Sherlin: We don't have the photo now, I will send how the material look like tomorrow.
+[9.03.2026, 12:12:13] Mateusz: thank you Sherlin 😊
