@@ -1,201 +1,121 @@
 import { motion } from 'framer-motion'
-import { MatchaCharacter, CoffeeCharacter } from '../components/Characters'
-import { ScatteredStars, Sparkle, StarFill, Bolt } from '../components/Decorations'
 
 const TICKER = '✦ MATCHA ✦ SPECIALTY KAWA ✦ WROCŁAW ✦ 24/7 ✦ MATCHA ✦ SPECIALTY KAWA ✦ WROCŁAW ✦ 24/7 ✦ '
 
 export default function IdleScreen({ goTo }) {
   return (
     <motion.div
-      className="screen relative"
-      style={{ background: '#FFD600' }}
+      className="screen"
+      style={{ background: '#0D0D0D' }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, scale: 0.96 }}
+      exit={{ opacity: 0, scale: 0.98 }}
       transition={{ duration: 0.4 }}
-      onClick={() => goTo(1)}
     >
-      {/* Dot grid texture */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: 'radial-gradient(circle, rgba(0,0,0,0.12) 1.5px, transparent 1.5px)',
-          backgroundSize: '22px 22px',
-        }}
-      />
-
-      {/* Scattered stars overlay */}
-      <ScatteredStars color="#0D0D0D" opacity={0.22} count={10} />
-
-      {/* Extra decorative bolts */}
-      <motion.div
-        className="absolute top-[18%] right-[8%]"
-        animate={{ rotate: [0, 15, 0] }}
-        transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
-      >
-        <Bolt size={36} color="#0D0D0D" />
-      </motion.div>
-      <motion.div
-        className="absolute bottom-[28%] left-[6%]"
-        animate={{ rotate: [0, -15, 0] }}
-        transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut', delay: 0.7 }}
-      >
-        <Bolt size={28} color="#0D0D0D" />
-      </motion.div>
-
-      {/* Top ticker */}
-      <div className="shrink-0 overflow-hidden py-3" style={{ background: '#0D0D0D' }}>
+      {/* Status bar / ticker at top */}
+      <div className="shrink-0 overflow-hidden py-2.5 relative z-10" style={{ background: 'rgba(0,0,0,0.55)', backdropFilter: 'blur(6px)' }}>
         <div className="marquee-track">
           {[TICKER, TICKER].map((t, i) => (
-            <span key={i} className="font-body font-700 text-xs tracking-[0.18em]"
-              style={{ color: '#FFD600' }}>
+            <span
+              key={i}
+              className="font-display text-xs tracking-[0.22em]"
+              style={{ color: 'rgba(255,255,255,0.85)', marginRight: '2px' }}
+            >
               {t}
             </span>
           ))}
         </div>
       </div>
 
-      {/* Main content */}
-      <div className="flex-1 flex flex-col items-center justify-between px-6 py-4 relative z-10">
+      {/* Full-screen promo graphic — swap <div> for <img src="/promo.jpg" className="w-full h-full object-cover" /> when photo is ready */}
+      <div className="flex-1 relative overflow-hidden">
+        {/* Gradient background (placeholder for promo photo) */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(165deg, #47BCD4 0%, #6EC8DC 25%, #9ED4C8 50%, #C8E8C4 75%, #D4F0A8 100%)',
+          }}
+        />
 
-        {/* OMG HI label */}
-        <motion.div
-          initial={{ opacity: 0, y: -16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.4 }}
-          className="w-full flex justify-center mt-2"
-        >
-          <div
-            className="px-6 py-2 rounded-full font-display text-3xl tracking-wide"
-            style={{
-              background: '#0D0D0D',
-              color: '#FFD600',
-              border: '3px solid #0D0D0D',
-            }}
-          >
-            OMG HI :)
-          </div>
-        </motion.div>
+        {/* Subtle texture overlay */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: 'radial-gradient(ellipse at 70% 30%, rgba(255,255,255,0.18) 0%, transparent 60%)',
+          }}
+        />
 
-        {/* Characters + KOMBINI center block */}
-        <div className="flex-1 flex flex-col items-center justify-center gap-3 w-full">
+        {/* Bottom gradient for button legibility */}
+        <div
+          className="absolute bottom-0 left-0 right-0 h-40 pointer-events-none"
+          style={{
+            background: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.45) 100%)',
+          }}
+        />
 
-          {/* Characters row */}
+        {/* Promo content */}
+        <div className="absolute inset-0 flex flex-col items-start justify-end p-7 pb-10">
           <motion.div
-            className="flex items-end justify-center gap-4 w-full"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, type: 'spring', stiffness: 180 }}
-          >
-            {/* Matcha character */}
-            <div className="animate-float" style={{ animationDelay: '0s' }}>
-              <MatchaCharacter size={108} />
-            </div>
-
-            {/* Center KOMBINI text */}
-            <motion.div
-              className="text-center flex-1"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.3, duration: 0.5, ease: 'easeOut' }}
-            >
-              <div
-                className="font-display leading-none"
-                style={{ fontSize: '96px', color: '#0D0D0D', lineHeight: 0.9 }}
-              >
-                KOM
-              </div>
-              <div
-                className="font-display leading-none"
-                style={{ fontSize: '96px', color: '#0D0D0D', lineHeight: 0.9 }}
-              >
-                BINI
-              </div>
-            </motion.div>
-
-            {/* Coffee character */}
-            <div className="animate-float" style={{ animationDelay: '0.5s' }}>
-              <CoffeeCharacter size={108} />
-            </div>
-          </motion.div>
-
-          {/* Specialty line */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.45 }}
-            className="flex items-center gap-3"
-          >
-            <div className="h-px flex-1" style={{ background: 'rgba(0,0,0,0.2)' }} />
-            <p className="font-body font-700 text-sm tracking-[0.2em] uppercase"
-              style={{ color: 'rgba(0,0,0,0.5)' }}>
-              specialty matcha & kawa
-            </p>
-            <div className="h-px flex-1" style={{ background: 'rgba(0,0,0,0.2)' }} />
-          </motion.div>
-
-          {/* Category pills */}
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.55 }}
-            className="flex gap-3 mt-1"
+            transition={{ delay: 0.15, duration: 0.55, ease: 'easeOut' }}
           >
-            <span
-              className="px-5 py-2.5 rounded-full font-body font-800 text-sm tracking-wide"
-              style={{
-                background: '#B5FF47',
-                color: '#0D0D0D',
-                border: '2.5px solid #0D0D0D',
-                boxShadow: '3px 3px 0px #0D0D0D',
-              }}
+            <p
+              className="font-display tracking-widest mb-1"
+              style={{ fontSize: '13px', color: 'rgba(255,255,255,0.75)', letterSpacing: '0.28em' }}
             >
-              ✦ MATCHA
-            </span>
-            <span
-              className="px-5 py-2.5 rounded-full font-body font-800 text-sm tracking-wide"
-              style={{
-                background: '#FF9D3D',
-                color: '#0D0D0D',
-                border: '2.5px solid #0D0D0D',
-                boxShadow: '3px 3px 0px #0D0D0D',
-              }}
+              KOMBINI
+            </p>
+            <h1
+              className="font-display leading-[0.92]"
+              style={{ fontSize: '72px', color: '#fff', textShadow: '0 2px 20px rgba(0,0,0,0.25)' }}
             >
-              ✦ KAWA
-            </span>
+              MATCHA<br />& KAWA
+            </h1>
+            <p
+              className="font-body font-500 mt-3"
+              style={{ fontSize: '16px', color: 'rgba(255,255,255,0.82)' }}
+            >
+              Specialty na wynos — Wrocław 24/7
+            </p>
           </motion.div>
         </div>
 
-        {/* Bottom CTA */}
+        {/* Decorative matcha circle top-right */}
         <motion.div
+          className="absolute"
+          style={{ top: '12%', right: '-8%', width: '260px', height: '260px', borderRadius: '50%', background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)' }}
+          animate={{ scale: [1, 1.04, 1] }}
+          transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <motion.div
+          className="absolute"
+          style={{ top: '6%', right: '4%', width: '160px', height: '160px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)' }}
+          animate={{ scale: [1, 1.06, 1] }}
+          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 0.8 }}
+        />
+      </div>
+
+      {/* Zamów button */}
+      <div className="shrink-0 px-5 pb-6 pt-3 relative z-10" style={{ background: 'transparent' }}>
+        <motion.button
+          onClick={() => goTo(1)}
+          className="w-full rounded-2xl font-display tracking-widest"
+          style={{
+            background: '#1A4A1A',
+            color: '#fff',
+            fontSize: '28px',
+            padding: '20px 0',
+            border: 'none',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.35)',
+          }}
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.65 }}
-          className="flex flex-col items-center gap-3 pb-2"
+          transition={{ delay: 0.35, duration: 0.45 }}
+          whileTap={{ scale: 0.97 }}
         >
-          {/* Sparkle above button */}
-          <motion.div
-            animate={{ scale: [1, 1.3, 1], rotate: [0, 45, 0] }}
-            transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-          >
-            <Sparkle size={20} color="#0D0D0D" />
-          </motion.div>
-
-          {/* CTA pill button */}
-          <motion.div
-            animate={{ y: [0, -5, 0] }}
-            transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
-            className="px-10 py-4 rounded-full font-display text-2xl tracking-wider cursor-pointer"
-            style={{
-              background: '#0D0D0D',
-              color: '#FFD600',
-              border: '3px solid #0D0D0D',
-              boxShadow: '4px 4px 0px rgba(0,0,0,0.3)',
-            }}
-          >
-            tap to start ★
-          </motion.div>
-        </motion.div>
+          ZAMÓW
+        </motion.button>
       </div>
     </motion.div>
   )

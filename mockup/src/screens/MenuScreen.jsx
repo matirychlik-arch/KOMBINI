@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { DRINKS } from '../data/drinks'
-import { ScatteredStars, StarFill, Sparkle } from '../components/Decorations'
+import { DrinkCup } from '../components/DrinkCup'
 
 const TABS = [
-  { id: 'matcha', label: 'MATCHA', bg: '#FF2D78', accent: '#B5FF47', textColor: '#0D0D0D' },
-  { id: 'coffee', label: 'KAWA',   bg: '#FF6B00', accent: '#FFD600', textColor: '#0D0D0D' },
+  { id: 'matcha', label: 'MATCHA', heading: 'Matcha', accent: '#2D6A2F' },
+  { id: 'coffee', label: 'KAWA',   heading: 'Kawa',   accent: '#4A3728' },
 ]
+
+const BG = '#F2F0EA'
+const TILE_BG = '#E8E5DC'
+const ACTIVE_TILE = '#2D5A27'
+const TEXT_DARK = '#1A3A1A'
 
 export default function MenuScreen({ goTo, cart, onSelectDrink }) {
   const [tab, setTab] = useState('matcha')
@@ -15,76 +20,62 @@ export default function MenuScreen({ goTo, cart, onSelectDrink }) {
 
   return (
     <motion.div
-      className="screen relative"
-      style={{ background: active.bg }}
+      className="screen"
+      style={{ background: BG }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
-      {/* Background dots */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: 'radial-gradient(circle, rgba(0,0,0,0.1) 1.5px, transparent 1.5px)',
-          backgroundSize: '20px 20px',
-        }}
-      />
-
-      {/* Stars overlay */}
-      <ScatteredStars color="#0D0D0D" opacity={0.15} count={8} />
-
       {/* Header */}
-      <div className="shrink-0 px-5 pt-8 pb-3 flex items-center justify-between relative z-10">
-        <div className="flex items-center gap-2">
-          <span
-            className="font-display text-5xl tracking-wider"
-            style={{ color: '#0D0D0D' }}
+      <div className="shrink-0 px-5 pt-8 pb-2 flex items-start justify-between">
+        <div>
+          <AnimatePresence mode="wait">
+            <motion.h1
+              key={tab}
+              className="font-display leading-none"
+              style={{ fontSize: '64px', color: active.accent, lineHeight: 1 }}
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.22 }}
+            >
+              {active.heading.toUpperCase()}
+            </motion.h1>
+          </AnimatePresence>
+          <p
+            className="font-body font-500 mt-1"
+            style={{ fontSize: '20px', color: TEXT_DARK, opacity: 0.7 }}
           >
-            KOMBINI
-          </span>
-          <motion.div
-            animate={{ rotate: [0, 20, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          >
-            <StarFill size={22} color="#0D0D0D" />
-          </motion.div>
+            Hey, what's up?
+          </p>
         </div>
+
         {cart.length > 0 && (
           <button
             onClick={() => goTo(4)}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-full font-body font-800 text-sm"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-2xl font-body font-700 text-sm mt-2"
             style={{
-              background: '#0D0D0D',
-              color: '#FFD600',
-              border: '2px solid #0D0D0D',
-              boxShadow: '3px 3px 0px rgba(0,0,0,0.25)',
+              background: ACTIVE_TILE,
+              color: '#fff',
+              flexShrink: 0,
             }}
           >
-            koszyk ★ {cart.length}
+            Koszyk&nbsp;·&nbsp;{cart.length}
           </button>
         )}
       </div>
 
       {/* Category tabs */}
-      <div className="shrink-0 px-5 pb-4 flex gap-2.5 relative z-10">
+      <div className="shrink-0 px-5 pt-3 pb-4 flex gap-2">
         {TABS.map(t => (
           <button
             key={t.id}
             onClick={() => setTab(t.id)}
-            className="flex-1 py-3.5 rounded-2xl font-display text-2xl tracking-widest transition-all duration-200"
+            className="px-6 py-2 rounded-xl font-body font-700 text-sm transition-all duration-200"
             style={tab === t.id
-              ? {
-                  background: '#0D0D0D',
-                  color: t.accent,
-                  border: '3px solid #0D0D0D',
-                  boxShadow: '4px 4px 0px rgba(0,0,0,0.3)',
-                }
-              : {
-                  background: 'rgba(255,255,255,0.25)',
-                  color: 'rgba(0,0,0,0.55)',
-                  border: '2.5px solid rgba(0,0,0,0.3)',
-                }
+              ? { background: active.accent, color: '#fff' }
+              : { background: TILE_BG, color: TEXT_DARK, opacity: 0.6 }
             }
           >
             {t.label}
@@ -92,118 +83,83 @@ export default function MenuScreen({ goTo, cart, onSelectDrink }) {
         ))}
       </div>
 
-      {/* Drinks list */}
-      <div className="scroll-area px-5 pb-6 relative z-10">
+      {/* Drink grid */}
+      <div className="scroll-area px-5 pb-6">
         <AnimatePresence mode="wait">
           <motion.div
             key={tab}
-            initial={{ opacity: 0, y: 12 }}
+            className="grid gap-3"
+            style={{ gridTemplateColumns: '1fr 1fr' }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            className="flex flex-col gap-3"
+            transition={{ duration: 0.22 }}
           >
             {drinks.map((drink, i) => (
               <motion.button
                 key={drink.id}
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.07 }}
                 onClick={() => onSelectDrink(drink)}
-                className="w-full text-left rounded-2xl overflow-hidden active:scale-[0.98] transition-transform"
+                className="flex flex-col items-center rounded-2xl overflow-hidden active:scale-[0.97] transition-transform text-left"
                 style={{
-                  background: '#fff',
-                  border: '2.5px solid #0D0D0D',
-                  boxShadow: '4px 4px 0px #0D0D0D',
+                  background: drink.isBestseller ? ACTIVE_TILE : TILE_BG,
+                  padding: '16px 12px 14px',
                 }}
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.06 }}
               >
-                {/* Top accent bar */}
-                <div className="h-1.5" style={{ background: active.accent }} />
+                {/* Cup illustration */}
+                <div className="flex items-center justify-center mb-2" style={{ height: '90px' }}>
+                  <DrinkCup drink={drink} size={72} />
+                </div>
 
-                <div className="p-4">
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="flex-1 min-w-0">
-                      {/* Name row */}
-                      <div className="flex items-center gap-2 mb-1 flex-wrap">
-                        <span className="font-display text-[26px] leading-tight text-[#0D0D0D]">
-                          {drink.name.toUpperCase()}
-                        </span>
-                        {drink.isBestseller && (
-                          <span
-                            className="flex items-center gap-1 text-[11px] font-800 tracking-wide px-2.5 py-1 rounded-full"
-                            style={{
-                              background: '#FFD600',
-                              color: '#0D0D0D',
-                              border: '1.5px solid #0D0D0D',
-                            }}
-                          >
-                            <StarFill size={9} color="#0D0D0D" /> HIT
-                          </span>
-                        )}
-                        {drink.isIced && (
-                          <span
-                            className="text-[11px] font-700 tracking-wide px-2.5 py-1 rounded-full"
-                            style={{
-                              background: '#E0F4FF',
-                              color: '#0070A0',
-                              border: '1.5px solid #0070A0',
-                            }}
-                          >
-                            ❄ ICE
-                          </span>
-                        )}
-                      </div>
-                      {/* Description */}
-                      <p className="font-body font-400 text-sm leading-snug text-[#555]">
-                        {drink.description}
-                      </p>
-                    </div>
+                {/* Name */}
+                <p
+                  className="font-body font-700 text-center leading-tight w-full"
+                  style={{
+                    fontSize: '14px',
+                    color: drink.isBestseller ? '#fff' : TEXT_DARK,
+                    marginBottom: '4px',
+                  }}
+                >
+                  {drink.name}
+                </p>
 
-                    {/* Price badge */}
-                    <div
-                      className="shrink-0 w-16 h-16 rounded-full flex flex-col items-center justify-center"
-                      style={{
-                        background: active.bg,
-                        border: '2.5px solid #0D0D0D',
-                        boxShadow: '3px 3px 0px #0D0D0D',
-                      }}
-                    >
-                      <span className="font-body font-900 text-[15px] leading-none text-[#0D0D0D]">
-                        {drink.price.toFixed(0)}
+                {/* Price */}
+                <p
+                  className="font-body font-500 text-center"
+                  style={{
+                    fontSize: '13px',
+                    color: drink.isBestseller ? 'rgba(255,255,255,0.75)' : 'rgba(26,58,26,0.55)',
+                  }}
+                >
+                  {drink.price.toFixed(2).replace('.', ',')} zł
+                </p>
+
+                {/* Badges */}
+                {(drink.isBestseller || drink.isIced) && (
+                  <div className="flex gap-1 mt-2 flex-wrap justify-center">
+                    {drink.isBestseller && (
+                      <span
+                        className="text-[10px] font-700 px-2 py-0.5 rounded-full"
+                        style={{ background: 'rgba(255,255,255,0.2)', color: '#fff' }}
+                      >
+                        ★ HIT
                       </span>
-                      <span className="font-body font-700 text-[10px] text-[#0D0D0D]">zł</span>
-                    </div>
-                  </div>
-
-                  {/* Ingredients tags */}
-                  <div className="flex flex-wrap gap-1.5 mt-3">
-                    {drink.ingredients.map(ing => (
-                      <span key={ing}
-                        className="font-body font-600 text-[11px] px-2.5 py-1 rounded-lg"
+                    )}
+                    {drink.isIced && (
+                      <span
+                        className="text-[10px] font-700 px-2 py-0.5 rounded-full"
                         style={{
-                          background: '#F2F2F2',
-                          color: '#555',
-                          border: '1px solid #ddd',
+                          background: drink.isBestseller ? 'rgba(255,255,255,0.2)' : 'rgba(0,112,160,0.12)',
+                          color: drink.isBestseller ? '#fff' : '#0070A0',
                         }}
                       >
-                        {ing}
+                        ❄ ICE
                       </span>
-                    ))}
+                    )}
                   </div>
-
-                  {/* Bottom row */}
-                  <div className="mt-3 flex items-center justify-end">
-                    <span
-                      className="font-body font-700 text-xs px-3 py-1.5 rounded-full"
-                      style={{
-                        background: '#0D0D0D',
-                        color: active.accent,
-                      }}
-                    >
-                      zamów →
-                    </span>
-                  </div>
-                </div>
+                )}
               </motion.button>
             ))}
           </motion.div>
