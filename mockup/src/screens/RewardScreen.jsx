@@ -1,137 +1,108 @@
 import { motion } from 'framer-motion'
 
-const POINTS = 50
-
 export default function RewardScreen({ goTo }) {
   return (
     <motion.div
-      className="w-full h-full flex flex-col items-center justify-between bg-bg relative overflow-hidden"
-      initial={{ opacity: 0, scale: 0.9 }}
+      className="screen"
+      style={{ background: '#3A0870' }}
+      initial={{ opacity: 0, scale: 0.92 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+      transition={{ type: 'spring', stiffness: 200, damping: 22 }}
     >
-      {/* Background star burst */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        {[...Array(12)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-24 rounded-full origin-bottom"
+      {/* Starburst lines */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+        {[...Array(10)].map((_, i) => (
+          <motion.div key={i}
+            className="absolute w-0.5 rounded-full origin-center"
             style={{
-              background: `linear-gradient(to top, rgba(255,61,127,0.4), transparent)`,
-              transform: `rotate(${i * 30}deg) translateY(-60px)`,
+              height: '55%',
+              background: 'linear-gradient(to top, rgba(255,61,127,0.5), transparent)',
+              transform: `rotate(${i * 36}deg)`,
+              transformOrigin: 'center 100%',
             }}
             initial={{ scaleY: 0, opacity: 0 }}
-            animate={{ scaleY: 1, opacity: [0, 1, 0.5] }}
-            transition={{ delay: 0.3 + i * 0.04, duration: 0.6 }}
+            animate={{ scaleY: 1, opacity: [0, 0.8, 0.4] }}
+            transition={{ delay: 0.2 + i * 0.05, duration: 0.7 }}
           />
         ))}
       </div>
 
       {/* Floating particles */}
-      {[...Array(8)].map((_, i) => (
-        <motion.div
-          key={`p-${i}`}
-          className="absolute w-2 h-2 rounded-full"
-          style={{
-            background: i % 2 === 0 ? '#FF3D7F' : '#B5FF47',
-            left: `${15 + i * 10}%`,
-            top: `${20 + (i % 3) * 20}%`,
-          }}
-          animate={{
-            y: [-10, -30, -10],
-            opacity: [0.6, 1, 0.6],
-            scale: [1, 1.3, 1],
-          }}
-          transition={{ duration: 2 + i * 0.3, repeat: Infinity, delay: i * 0.2 }}
+      {['#B5FF47', '#FF3D7F', '#FFD600', '#B5FF47', '#FF3D7F'].map((c, i) => (
+        <motion.div key={i}
+          className="absolute w-2.5 h-2.5 rounded-full"
+          style={{ background: c, left: `${15 + i * 16}%`, top: `${18 + (i % 3) * 18}%` }}
+          animate={{ y: [-8, -24, -8], scale: [1, 1.4, 1], opacity: [0.7, 1, 0.7] }}
+          transition={{ duration: 2.2 + i * 0.4, repeat: Infinity, delay: i * 0.25 }}
         />
       ))}
 
-      <div className="pt-10" />
-
-      {/* Main content */}
-      <div className="flex flex-col items-center gap-6 px-8 text-center z-10">
-        {/* Star emoji big */}
+      {/* Content */}
+      <div className="flex-1 flex flex-col items-center justify-center px-8 text-center gap-7 relative z-10">
         <motion.div
-          initial={{ scale: 0, rotate: -30 }}
+          initial={{ scale: 0, rotate: -20 }}
           animate={{ scale: 1, rotate: 0 }}
-          transition={{ delay: 0.2, type: 'spring', stiffness: 250 }}
-          className="text-7xl"
+          transition={{ delay: 0.2, type: 'spring', stiffness: 280 }}
+          className="text-8xl"
         >
           🎁
         </motion.div>
 
         <div>
           <motion.p
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="font-body text-sm font-700 tracking-[0.2em] text-muted uppercase mb-2"
+            className="font-body font-800 text-sm tracking-[0.22em] uppercase mb-2"
+            style={{ color: 'rgba(255,255,255,0.5)' }}
           >
             Masz nagrodę!
           </motion.p>
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, type: 'spring' }}
-            className="font-display text-6xl text-glow-pink"
-            style={{ color: '#FF3D7F' }}
           >
-            +{POINTS}
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
-            className="font-display text-2xl text-white mt-1"
-          >
-            KOMBINI PUNKTÓW
-          </motion.p>
+            <span className="font-display text-[88px] leading-none" style={{ color: '#FF3D7F' }}>
+              +50
+            </span>
+            <br />
+            <span className="font-display text-3xl text-white">KOMBINI PUNKTÓW</span>
+          </motion.div>
         </div>
 
-        {/* Reward card */}
+        {/* Progress card */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8 }}
-          className="w-full max-w-[280px] p-5 rounded-2xl text-left"
-          style={{
-            background: 'linear-gradient(135deg, rgba(255,61,127,0.12), rgba(181,255,71,0.08))',
-            border: '1px solid rgba(255,61,127,0.25)',
-          }}
+          transition={{ delay: 0.75 }}
+          className="w-full max-w-[280px] p-5 rounded-2xl"
+          style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.12)' }}
         >
-          <p className="font-body text-xs text-muted mb-3 tracking-wider uppercase">Twoje konto</p>
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="font-body text-xs text-muted">Punkty ogółem</p>
-              <p className="font-display text-3xl text-white">{POINTS}</p>
-            </div>
-            <div
-              className="w-12 h-12 rounded-full flex items-center justify-center text-xl"
-              style={{ background: 'rgba(255,61,127,0.15)' }}
-            >
-              ⭐
-            </div>
-          </div>
-          <div className="mt-3 pt-3 border-t border-border">
-            <p className="font-body text-[11px] text-muted">
-              Zbierz 200 punktów i zdobądź darmowy napój!
+          <div className="flex justify-between items-center mb-3">
+            <p className="font-body font-600 text-xs tracking-wider" style={{ color: 'rgba(255,255,255,0.45)' }}>
+              DO DARMOWEGO NAPOJU
             </p>
-            <div className="mt-2 w-full h-1.5 rounded-full overflow-hidden" style={{ background: '#2A2A2A' }}>
-              <div className="h-full rounded-full" style={{ width: '25%', background: '#FF3D7F' }} />
-            </div>
+            <p className="font-body font-900 text-sm text-white">50 / 200</p>
           </div>
+          <div className="w-full h-2 rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.1)' }}>
+            <div className="h-full rounded-full" style={{ width: '25%', background: '#FF3D7F' }} />
+          </div>
+          <p className="font-body text-xs mt-2" style={{ color: 'rgba(255,255,255,0.35)' }}>
+            Jeszcze 150 punktów — prawie jesteś!
+          </p>
         </motion.div>
       </div>
 
       {/* CTA */}
-      <div className="pb-10 w-full px-8 z-10">
+      <div className="shrink-0 px-8 pb-10 relative z-10">
         <motion.button
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.0 }}
+          transition={{ delay: 0.9 }}
           onClick={() => goTo(9)}
-          className="w-full py-5 rounded-2xl font-body text-base font-800 tracking-wider transition-all active:scale-[0.97]"
+          className="w-full py-5 rounded-2xl font-body font-900 text-base tracking-wide active:scale-[0.97] transition-transform"
           style={{ background: '#FF3D7F', color: '#fff' }}
         >
           ODBIERZ NAPÓJ →

@@ -50,7 +50,7 @@ export default function App() {
   const total = cart.reduce((sum, item) => sum + item.price, 0)
 
   const ctx = {
-    screen, goTo,
+    goTo,
     selectedDrink,
     customization, setCustomization,
     cart, setCart, total,
@@ -60,8 +60,8 @@ export default function App() {
   }
 
   return (
-    <div className="grain">
-      <div className="kiosk no-select">
+    <div className="no-select">
+      <div className="kiosk">
         <AnimatePresence mode="wait">
           {screen === 0 && <IdleScreen key="idle" {...ctx} />}
           {screen === 1 && <MenuScreen key="menu" {...ctx} />}
